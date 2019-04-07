@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    tools:context=".TCActivity">
+
+    <EditText
+        android:id="@+id/editTextBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_columnSpan="3"
+
+        android:layout_marginTop="3dp"
+
+        android:background="#f3f1cb"
+        android:hint="Enter Bill Amount"
+        android:inputType="number"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textViewPercent"
+        android:layout_width="79dp"
+        android:layout_height="59dp"
+        android:layout_alignStart="@+id/editTextBillAmount"
+        android:layout_column="0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_row="1"
+        android:hint="%"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        style="@android:style/Widget.Material.SeekBar.Discrete"
+        android:layout_width="247dp"
+        android:layout_height="57dp"
+        android:layout_alignEnd="@+id/textViewPercent"
+        android:layout_alignStart="@+id/editTextBillAmount"
+        android:layout_column="1"
+
+        android:layout_marginEnd="3dp"
+        android:layout_row="1"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/text_tip_amount"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextBillAmount"
+        android:layout_column="0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_row="2"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="TIP"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="214dp"
+        android:layout_height="65dp"
+        android:layout_alignEnd="@+id/text_tip_amount"
+        android:layout_below="@+id/textViewPercent"
+        android:layout_column="1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_row="2"
+        android:background="#e1e9c8"
+        android:hint="$0.00"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="68dp"
+        android:layout_height="59dp"
+        android:layout_alignStart="@+id/editTextBillAmount"
+        android:layout_centerVertical="true"
+        android:layout_column="0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_row="3"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="TOTAL"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textScaleX="1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewBillAmount"
+        android:layout_width="216dp"
+        android:layout_height="70dp"
+        android:layout_alignEnd="@+id/editTextBillAmount"
+        android:layout_alignTop="@+id/text_total"
+        android:layout_column="1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_row="3"
+        android:background="#e1e9c8"
+        android:hint="$0.00"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:textSize="30sp" />
+
+
+</GridLayout>
